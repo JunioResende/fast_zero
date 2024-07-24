@@ -6,7 +6,8 @@ authors = ["JunioResende <junioresende23@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.10"
+python = "3.12.*"
+fastapi = "^0.111.1"
 
 
 [build-system]
