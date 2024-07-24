@@ -1,4 +1,4 @@
-import http
+from http import HTTPStatus
 
 from fastapi.testclient import TestClient
 
@@ -9,5 +9,5 @@ def test_app_hello_world():
     client = TestClient(app)
     response = client.get('/')
 
-    assert response.status_code == http.HTTPStatus.OK
+    assert response.status_code == HTTPStatus.OK
     assert response.json() == {'message': 'Hello World'}
